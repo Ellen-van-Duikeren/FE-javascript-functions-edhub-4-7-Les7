@@ -42,10 +42,9 @@ console.log(getGrades());
 // ---- Verwachte uitkomst bij het aanroepen van de functie: { firstName: 'Jan', lastName: 'Janssen' }
 console.log("\nOpdracht 4")
 const getDetails = () => {
-  const name = {
+  return {
     firstName: "Ellen",
     lastName: "van Duikeren"
   }
-  return name;
 }
 console.log(getDetails());

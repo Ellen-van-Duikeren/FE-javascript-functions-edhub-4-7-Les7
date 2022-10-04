@@ -30,7 +30,7 @@ console.log(greeter("Ellen"));
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
 console.log("\nOpdracht 2")
-const minutesToSeconds = (minutes) => {return minutes * 60};
+const minutesToSeconds = (minutes) =>  minutes * 60;
 console.log(minutesToSeconds(1));
 console.log(minutesToSeconds(3));
 console.log(minutesToSeconds(23));
@@ -57,10 +57,10 @@ console.log(merge("zoet", "sappig"));
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
 console.log("\nOpdracht 4")
 function calculateDogYears(dogAge) {
-  return dogAge * 7;
+  return "Jouw hond is " + dogAge * 7 + " jaar oud in mensenjaren.";
 }
-console.log("Jouw hond is " + calculateDogYears(6) + " jaar oud in mensenjaren.");
-console.log("Jouw hond is " + calculateDogYears(2) + " jaar oud in mensenjaren.");
+console.log(calculateDogYears(6));
+console.log(calculateDogYears(2));
 
 
 /* Opdracht 5 */
@@ -88,3 +88,11 @@ function createDetailString({firstName, lastName, profession}) {
 }
 console.log(createDetailString({ firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}));
 console.log(createDetailString({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}));
+
+// of
+console.log("\nBonusopdracht op een andere wijze");
+function createDetailString2(personObject) {
+  return "Het beroep van " + personObject.firstName + " " + personObject.lastName + " is " + personObject.profession +"."
+}
+console.log(createDetailString2({ firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}));
+console.log(createDetailString2({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}));
